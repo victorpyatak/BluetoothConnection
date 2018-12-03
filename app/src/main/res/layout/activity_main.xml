@@ -22,18 +22,27 @@
 
        <Button
            android:layout_marginTop="10dp"
-           android:id="@+id/btnEnableDiscoverability"
+           android:id="@+id/btnDiscoverUnpairedDevices"
            android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="discover"/>
+           android:layout_height="wrap_content" />
+
    </LinearLayout>
 
-    <ListView
-        android:id="@+id/listViewPairedDevices"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
-    </ListView>
+        <ListView
+            android:id="@+id/newDevicesListView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </RelativeLayout>
 
 
 
